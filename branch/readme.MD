@@ -18,3 +18,7 @@
 #### branch 삭제하기
 
     git branch -d <branch>
+
+#### branch 이름 변경
+
+    git branch -m <branch1> <branch2>
