@@ -1,24 +1,11 @@
-#### branch 상태 확인
+#### git reset
 
-    git branch
-    git branch -v # 마지막 커밋내용
-    git branch -r # 리모트 저장소
-    git branch -a # 로컬, 리모트 모두
+    git reset <option> <commit>
 
-#### brach 만들기
+    git reset -hard <commit> # commit 이후 모두 삭제
+    git reset -soft <commit> # 인덱스, commit 그대로 보존
+    git reset -mixed <commit> # 기본값, 인데스 초기화
 
-    git branch <branch>
+#### git revert
 
-#### branch 이동하기
-
-    git checkout <branch>
-
-    git checkout -b <branch> # 생성과 동시에 이동
-
-#### branch 삭제하기
-
-    git branch -d <branch>
-
-#### branch 이름 변경
-
-    git branch -m <branch1> <branch2>
+    git revert <commit> # 이전 commit으로 되돌아가는게 아니라 새로운 commit을 만들고 해당 commit 코드로 돌아감
